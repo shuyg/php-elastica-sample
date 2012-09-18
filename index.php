@@ -75,7 +75,7 @@
           </code>
 
           <p>Go to search_page.php and put replace your API key with the dummy one in the configuration element.</p>
-          <code>'api-key' => 'PUT_YOUR_API_KEY_HERE'</code>
+          <code>'path' => 'api-key/PUT_YOUR_API_KEY_HERE/'</code>
 
           <p>All done!</p>
 
