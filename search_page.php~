@@ -9,7 +9,7 @@ require_once('./' . $path . '.php');
 }
 spl_autoload_register('__autoload_elastica');
 
-$elasticaClient = new Elastica_Client(array(
+$elasticaClient = new SearchBoxClient(array(
 'host' => 'api.searchbox.io',
 'port' => 443,
 'transport' => 'https',
