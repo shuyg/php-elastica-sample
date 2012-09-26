@@ -32,8 +32,8 @@ $elasticaType->addDocument($gameDocument2);
 <?php include("layout/head.php"); ?>
 <h2>Operation Result</h2>
 
-<div class="lift:documentCreator.handle">
-    Operation Result : 2 Documents are indexed
+<div>
+    2 Documents are indexed
 </div>
 </hr>
 
