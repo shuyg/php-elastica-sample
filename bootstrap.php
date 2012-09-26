@@ -11,13 +11,15 @@ function __autoload_elastica($class)
 
 spl_autoload_register('__autoload_elastica');
 
+
+// Last character of url should be a slash("/")!!!
 $elasticaClient = new Elastica_Client(array(
-    'url' => 'https://api.searchbox.io/api-key/PUT_YOUR_API_KEY_HERE',
+    'url' => 'https://api.searchbox.io/api-key/PUT_YOUR_API_KEY_HERE/',
 ));
 
 /*
     $elasticaClient = new Elastica_Client(array(
-    'url' => 'http://localhost:9200',
+    'url' => 'http://localhost:9200/',
 ));
  */
 

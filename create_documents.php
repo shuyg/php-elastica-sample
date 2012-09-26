@@ -5,12 +5,8 @@ require "bootstrap.php";
 // Load index
 $elasticaIndex = $elasticaClient->getIndex('games');
 
-// Delete index
-$elasticaIndex->delete();
-
 // Create index
-$elasticaIndex->create();
-
+$elasticaIndex->create(array(), true);
 
 // Get type
 $elasticaType = $elasticaIndex->getType('game');
@@ -24,8 +20,8 @@ $game2 = array('name' => 'StarCraft',
 'description' => 'StarCraft is a military science fiction real-time strategy video game developed and published by Blizzard Entertainment');
 
 // Document addition
-$gameDocument1 = new Elastica_Document($game1);
-$gameDocument2 = new Elastica_Document($game1);
+$gameDocument1 = new Elastica_Document("1",$game1);
+$gameDocument2 = new Elastica_Document("2",$game2);
 
 // Add games to type
 $elasticaType->addDocument($gameDocument1);

@@ -19,9 +19,9 @@ To test search; enter "starcraft", "warcraft" or "*" to search box at top right 
 * Change connection string at search_page.php
     * from
         ```
-            'url' => 'https://api.searchbox.io/api-key/PUT_YOUR_API_KEY_HERE',
+            'url' => 'https://api.searchbox.io/api-key/PUT_YOUR_API_KEY_HERE/',
         ```
     * to
         ```
-            'url' => 'http://localhost:9200',
+            'url' => 'http://localhost:9200/',
         ```

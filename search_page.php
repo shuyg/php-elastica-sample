@@ -32,40 +32,31 @@ $elasticaResultSet = $elasticaIndex->search($elasticaQuery);
         <h5>
             <?php
             $elasticaResults = $elasticaResultSet->getResults();
-            $totalResults = $elasticaResultSet->getTotalHits();
-
-            echo('Total Hits for query: ' . $value . ' : ' . $totalResults);
-
             ?>
         </h5>
 
         <p>
-        <table class="table">
+        <table class="table table-bordered">
             <thead>
             <tr>
                 <th>
-                    Index Name
+                    Name
                 </th>
                 <th>
-                    Id
-                </th>
-                <th>
-                    Data
+                    Description
                 </th>
             </tr>
             </thead>
             <tbody>
             <?php
             foreach ($elasticaResults as $elasticaResult) {
+                $result = $elasticaResult->getData();
                 echo('<tr>');
                 echo('<td>');
-                echo($elasticaResult->getIndex());
+                echo($result["name"]);
                 echo('</td>');
                 echo('<td>');
-                echo($elasticaResult->getId());
-                echo('</td>');
-                echo('<td>');
-                echo($elasticaResult->getData()['message']);
+                echo($result["description"]);
                 echo('</td>');
                 echo('</tr>');
             }
