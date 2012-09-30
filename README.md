@@ -11,7 +11,7 @@ To test search; enter "starcraft", "warcraft" or "*" to search box at top right 
 ## Using with SearchBox.io
 
 * Sign Up and get your API-KEY from [here](https://searchbox.io/users/sign_up).
-* Go to search_page.php and put replace your API key with the dummy one in the configuration element.
+* Go to bootstrap.php and put replace your API key with the dummy one in the configuration element.
 
 
 ## Local Setup
