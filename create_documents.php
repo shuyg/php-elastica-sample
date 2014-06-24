@@ -6,6 +6,7 @@ require "bootstrap.php";
 $elasticaIndex = $elasticaClient->getIndex('games');
 
 // Create index
+// This will overwrite the old index if existed.
 $elasticaIndex->create(array(), true);
 
 // Get type
